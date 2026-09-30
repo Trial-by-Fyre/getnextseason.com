@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="NextSeason home">
       <img class="brand-icon" src="assets/nextseason-icon.jpeg" alt="">
@@ -21,7 +22,7 @@
     </nav>
   </header>
 
-  <main>
+  <main id="main" tabindex="-1">
     <section class="hero">
       <div class="hero-copy">
         <h1>Keep track of<br>the shows you love.</h1>
@@ -39,17 +40,17 @@
 
     <section class="features" id="features">
       <article>
-        <div class="feature-icon green">★</div>
+        <div class="feature-icon green" aria-hidden="true">★</div>
         <h2>Your watchlist</h2>
         <p>Keep track of the shows you’re watching and want to watch, all in one place.</p>
       </article>
       <article>
-        <div class="feature-icon blue">♟</div>
+        <div class="feature-icon blue" aria-hidden="true">♟</div>
         <h2>See when new seasons<br>are coming</h2>
         <p>See when new seasons are announced and when they’re expected to arrive.</p>
       </article>
       <article>
-        <div class="feature-icon purple">⌕</div>
+        <div class="feature-icon purple" aria-hidden="true">⌕</div>
         <h2>Easy to add shows</h2>
         <p>Search for your favorite shows and add them to your watchlist in just a few taps.</p>
       </article>
@@ -71,6 +72,7 @@
   <footer>
     <div aria-hidden="true"></div>
     <nav aria-label="Footer navigation">
+      <a href="index.html">Home</a>
       <a href="features.html">Features</a>
       <a href="plus.html">Plus</a>
       <a href="support.html">Support</a>
